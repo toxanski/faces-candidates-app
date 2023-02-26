@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { Button } from '@chakra-ui/react';
-import { ButtonPrimary, SharedUi } from '@faces-candidates-app/shared-ui';
+// import { Button } from '@chakra-ui/react';
+import { Button, Input, Link } from '@faces-candidates-app/shared-ui';
 
 const StyledPage = styled.div`
     .page {
@@ -17,9 +17,12 @@ export function Index() {
         <StyledPage>
             <div className="wrapper">
                 <div className="container">
+                    <Button variant="outline" px="56px">
+                        123
+                    </Button>
                     <Button>123</Button>
-                    <SharedUi />
-                    <ButtonPrimary>123</ButtonPrimary>
+                    <Input placeholder="Поиск" maxWidth="320px" />
+                    <Link href="/">Ссылка</Link>
                 </div>
             </div>
         </StyledPage>

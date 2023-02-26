@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import SharedUi from './shared-ui';
+import Link from './Link';
 
-describe('SharedUi', () => {
+describe('Link', () => {
     it('should render successfully', () => {
-        const { baseElement } = render(<SharedUi />);
+        const { baseElement } = render(<Link />);
         expect(baseElement).toBeTruthy();
     });
 });
